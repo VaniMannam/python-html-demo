@@ -1,7 +1,4 @@
-import webbrowser
-from pathlib import Path
-file_name = Path("index.html")
-message="""
+
 <html>
     <head> 
         <title>Python Genarated page</title>
@@ -18,7 +15,3 @@ message="""
        <p>7.In this way, Python creates the webpage, puts content in it, saves it, and opens it for me automatically.</p>
     </body>
 </html>
-"""
-with file_name.open("w",encoding="utf-8") as f:
-    f.write(message)
-webbrowser.open_new_tab(file_name.resolve().as_uri())
